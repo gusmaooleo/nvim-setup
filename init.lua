@@ -7,4 +7,4 @@ vim.opt.expandtab = true
 vim.opt.smartindent = true
 vim.opt.number = true
 
-vim.opt.clipboard = "unnamedplus"
+vim.opt.clipboard:append { 'unnamedplus' }

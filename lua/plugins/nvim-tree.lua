@@ -28,7 +28,7 @@ return {
       },
     })
  
-    vim.api.nvim_set_keymap('n', '<C-n>', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
+    vim.api.nvim_set_keymap('n', '<C-A-t>', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
   end
 }
 

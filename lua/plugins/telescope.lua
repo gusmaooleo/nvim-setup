@@ -9,6 +9,7 @@ return {
     }
 
     vim.api.nvim_set_keymap('n', '<C-k>', ':Telescope find_files<CR>', { noremap = true, silent = true })
+    vim.api.nvim_set_keymap('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', { noremap = true, silent = true })
   end
 }
 
