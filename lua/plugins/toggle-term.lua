@@ -5,7 +5,7 @@ return {
     config = function()
       
       require("toggleterm").setup{
-        size = 20,
+        size = 18,
         open_mapping = [[<c-\>]],  
         hide_numbers = true,
         shade_terminals = true,
@@ -19,6 +19,8 @@ return {
         shell = vim.o.shell,
       }
     end
-  }
+  },
+
+  vim.api.nvim_set_keymap('n', '<C-t>2', ':ToggleTerm 2', { noremap = true, silent = true })
 }
 
